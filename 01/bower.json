@@ -1,0 +1,32 @@
+{
+  "name": "JargonBusterControlPanel",
+  "version": "0.0.1",
+  "authors": [
+    "IamRobin <robinjanssen0@gmail.com>"
+  ],
+  "description": "AngularJS implementation of CMS",
+  "license": "MIT",
+  "directory": "app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-loader": "1.4.8",
+    "angular-messages": "1.4.8",
+    "angular-resource": "1.4.8",
+    "angular-ui-router": "0.2.15",
+    "angular-sanitize": "1.4.8",
+    "tinymce": "4.1.10",
+    "angular-file-upload": "2.2.0",
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.8"
+  }
+}

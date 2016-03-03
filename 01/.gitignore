@@ -1,0 +1,15 @@
+node_modules/
+
+app/libs/**
+app/css/**
+app/js/**
+
+app/scripts/common/utils/environment.js
+
+dist
+
+.sass-cache
+
+.idea
+
+**/.DS_Store
