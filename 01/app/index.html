@@ -7,8 +7,66 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body ng-app="MyFirstAngularApp">
+	
+	<div class="ui grid" ng-controller="FormController">
 
+		<div class="twelve wide column">
+			<div class="ui basic segment">
+				<p>{{error}}</p>
+				<form class="ui form" name="myForm" novalidate>
+					
+					<div class="one field">
+						<label>Titel</label>
+						<input type="text" ng-model="post.title" required/>
+					</div>
 
+					<div class="one field">
+						<label>Content</label>
+						<textarea ng-model="post.content" required></textarea>
+					</div>
+
+					<div class="one field">
+						<label>Afbeelding</label>
+						<input type="file" ng-model="post.image" />
+					</div>
+				</form>
+			</div>
+
+			<div class="ui basic segment">
+				<button class="ui primary icon button" ng-click="submitForm()">
+					<i class="save icon"></i>
+					Opslaan
+				</button>
+			</div>
+
+		</div>
+		
+
+	</div>
+	<!-- <div ng-controller="MyFirstController">
+		<input ng-model="myName" />
+		<input ng-model="myName" />
+
+		<div class="ui basic segment">
+			
+			<button class="ui primary button" ng-click="addItemToList()">Add</button>
+		</div>
+
+		Welcome {{myName}}
+
+		<ul>
+			<li ng-repeat="item in service.list | orderBy : item : true | filter : searchQuery">{{item}}</li>
+		</ul>
+	</div>
+
+	<div ng-controller="MySecondController">
+
+		Welcome controller 2 {{myName}}
+		
+		<ul>
+			<li ng-repeat="item in service.list | orderBy : item : true | filter : searchQuery">{{item}}</li>
+		</ul>
+	</div> -->
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="js/main.js"></script>
